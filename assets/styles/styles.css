@@ -1,0 +1,73 @@
+body {
+    background-image: url(../images/signup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+span {
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+.overlay {
+    opacity: 0.3;
+    position: absolute;
+    top: -32px;
+    right: -8px;
+    bottom: -39px;
+    left: -8px;
+    margin: 0px;
+    padding: 0px;
+    z-index: -1;
+    background-color: rgb(10, 10, 10);
+}
+
+.invisible-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+}
+
+.main-box {
+    padding: 2rem;
+    background-color: rgba(25, 102, 87, 0.267);
+    border-radius: 10px;
+    color: #000f11;
+}
+
+.form-box {   
+    margin: 2rem;
+    text-align: center;
+}
+
+.form-box h1 {
+    font-family: 'Baloo Bhaina 2', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.7em;
+    margin: 0px;
+    margin-bottom: 2rem;
+    padding: 0px;
+}
+
+.form {
+    text-align: left;
+    font-family: 'Short Stack', cursive;
+}
+
+.form p{
+    margin: 0.5em 0px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.form input {
+    width: 100%;
+    border-radius: 7px;
+    z-index: 2;
+    background-color: rgb(242, 232, 253);
+    border: 1px solid #000f11;
+}
