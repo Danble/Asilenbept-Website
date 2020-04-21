@@ -93,13 +93,28 @@ span {
 .back-up-layout {
     position: absolute;
     top: 0.3rem;
-    left: .7rem;
+    left: 0.7rem;
     font-family: 'Londrina Shadow', cursive;
     font-size: 1.7rem;
 }
 
 .back-up-layout p {
     margin: 0rem;
+    transition-duration: 700ms;
+    transition-timing-function: ease-out;
+}
+
+.back-up-layout:hover p {
+    transform: scale(1.07);
+}
+
+.photo-authors {
+    text-decoration: none;
+    color: khaki;
+}
+
+.photo-authors:visited {
+    color: #003339;
 }
 
 .back-down-layout {
@@ -113,6 +128,7 @@ span {
     padding: 0.5rem 1.5rem;
     border-radius: 5px;
     border: 1px solid #003339de;
+    outline: none;
     position: absolute;
     left: 35%;
     bottom: 3rem;
@@ -127,22 +143,6 @@ span {
 .btn-signup:hover {
     background-color: #001c1fde;
     border: 1px solid rgb(238, 250, 219);
-}
-
-.photo-authors {
-    transition-property: font-size;
-    transition-duration: 333ms;
-    transition-timing-function: ease-out;
-    text-decoration: none;
-    color: khaki;
-}
-
-.photo-authors:hover {
-    font-size: 1.8rem;
-}
-
-.photo-authors:visited {
-    color: #003339;
 }
 
 /* .btn-signup:hover span {
