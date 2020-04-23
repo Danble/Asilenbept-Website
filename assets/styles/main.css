@@ -1,0 +1,41 @@
+.main-image {
+  background-image: url(../images/mainAs.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+}
+
+.main-content {
+  position: relative;
+  top: 70vh;
+  right: 0px;
+  bottom: 0px;
+  left: -8px;
+  width: 100vw;
+  min-height: 28vh;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  width: 100vw;
+  min-height: auto;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.blog {
+  position: relative;
+  margin: 0em 2em;
+}
+
+/*# sourceMappingURL=main.css.map */
