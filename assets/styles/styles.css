@@ -96,16 +96,19 @@ span {
     left: 0.7rem;
     font-family: 'Londrina Shadow', cursive;
     font-size: 1.7rem;
+    will-change: transform;
 }
 
 .back-up-layout p {
     margin: 0rem;
     transition-duration: 700ms;
     transition-timing-function: ease-out;
+    will-change: transform;
 }
 
 .back-up-layout:hover p {
     transform: scale(1.07);
+    will-change: transform;
 }
 
 .photo-authors {
@@ -137,7 +140,7 @@ span {
     font-size: 1em;
     font-family: 'Baloo Bhaina 2', Arial, sans-serif;
     transition-duration: 0.7s;
-    transition-timing-function: cubic-bezier(.7,.48,0,0)
+    transition-timing-function: cubic-bezier(.7,.48,0,0);
 }
 
 .btn-signup:hover {
