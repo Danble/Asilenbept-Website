@@ -1,0 +1,23 @@
+.main {
+    margin: inherit;
+    padding: inherit;
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.main-image {
+    margin: inherit;
+    padding: inherit;
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    z-index: -1;
+    background-image: url(../images/mainAs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: top;
+    transition-duration: 2s;
+}
