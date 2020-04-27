@@ -46,6 +46,7 @@ span {
     background-color: rgba(25, 102, 87, 0.267);
     border-radius: 10px;
     color: #000f11;
+    overflow: hidden;
 }
 
 .login-main-box {
@@ -54,6 +55,39 @@ span {
     background-color: rgba(25, 102, 87, 0.267);
     border-radius: 10px;
     color: rgb(238, 250, 219);
+    overflow: hidden;
+}
+
+.shining {
+    width: 95px;
+    height: 160px;
+    background: rgb(24,102,87);
+    background: linear-gradient(0deg, rgba(24,102,87,0.267) 0%, rgba(198,255,244,0.267) 50%, rgba(24,102,87,0.267) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    will-change: transform;
+}
+
+@keyframes action-shineIn {
+    0% {
+        transform: translate(-90px, -90px) rotate(-52deg) scaleX(1.5) skew(-2deg);
+    }
+    100% {
+        transform: translate(178px, 210px) rotate(-52deg) scaleX(40) skew(-2deg);
+    }
+}
+
+@keyframes action-shineOut {
+    0% {
+        transform: translate(179px, 211px) rotate(-52deg) scaleX(37) skew(-2deg);
+    }
+    100% {
+        transform: translate(435px, 510px) rotate(-52deg) scaleX(1.5) skew(-2deg);
+    }
 }
 
 .form-box {   

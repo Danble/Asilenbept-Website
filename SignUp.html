@@ -14,6 +14,7 @@
             <p><a class="photo-authors" href="https://unsplash.com/@simonrae" target="_blank">Simon Rae</a></p>
         </div>
         <div class="signup-main-box">
+            <div id="shine"></div>
             <div class="form-box">
                 <h1><span>Registro para</span> Asilenbept</h1>
                 <div class="form">
@@ -35,5 +36,22 @@
             <i class="icon-info"></i>
         </div>
     </section>
+    <script>
+        const shine = document.getElementById('shine');
+
+        window.onload = () => {
+            setTimeout(() => {
+                shine.classList.add('shining');
+                shine.style.animationName = 'action-shineIn';
+            }, 1077);
+        }
+
+        shine.addEventListener('animationend', (e) => {
+            if(e.animationName === 'action-shineIn') {
+                shine.style.animationName = 'action-shineOut';
+                shine.style.animationTimingFunction = 'ease-out';
+            }
+        })
+    </script>
 </body>
 </html>
