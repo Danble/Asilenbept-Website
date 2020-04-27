@@ -1,3 +1,7 @@
 assets/images/
 scss/
+<<<<<<< HEAD
 *css.map
+=======
+*.css.map
+>>>>>>> 80a821a2970579d9f9cb269944e3414382829c07

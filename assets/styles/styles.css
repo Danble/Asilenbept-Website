@@ -46,6 +46,7 @@ span {
     background-color: rgba(25, 102, 87, 0.267);
     border-radius: 10px;
     color: #000f11;
+    overflow: hidden;
 }
 
 .login-main-box {
@@ -54,6 +55,48 @@ span {
     background-color: rgba(25, 102, 87, 0.267);
     border-radius: 10px;
     color: rgb(238, 250, 219);
+    overflow: hidden;
+}
+
+.shining {
+    width: 90vw;
+    height: 10rem;
+    background: rgb(24,102,87);
+    background: linear-gradient(0deg, rgba(24,102,87,0.267) 0%, rgba(198,255,244,0.267) 50%, rgba(24,102,87,0.267) 100%);
+    position: absolute;
+    top: 0rem;
+    left: -50rem;
+    animation-duration: 690ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    will-change: transform;
+}
+
+@keyframes action-shineIn-4k {
+    0% {
+        transform: translate(-15vw, -15vh) rotate(-52deg) skew(-2deg);
+    }
+    100% {
+        transform: translate(28vw, 28vh) rotate(-52deg) skew(-2deg);
+    }
+}
+
+@keyframes action-shineIn {
+    0% {
+        transform: translate(0vw, 0vh) rotate(-52deg) skew(-2deg);
+    }
+    100% {
+        transform: translate(28vw, 28vh) rotate(-52deg) skew(-2deg);
+    }
+}
+
+@keyframes action-shineOut {
+    0% {
+        transform: translate(28vw, 28vh) rotate(-52deg) skew(-2deg);
+    }
+    100% {
+        transform: translate(56vw, 56vh) rotate(-52deg) skew(-2deg);
+    }
 }
 
 .form-box {   
@@ -93,13 +136,31 @@ span {
 .back-up-layout {
     position: absolute;
     top: 0.3rem;
-    left: .7rem;
+    left: 0.7rem;
     font-family: 'Londrina Shadow', cursive;
     font-size: 1.7rem;
+    will-change: transform;
 }
 
 .back-up-layout p {
     margin: 0rem;
+    transition-duration: 700ms;
+    transition-timing-function: ease-out;
+    will-change: transform;
+}
+
+.back-up-layout:hover p {
+    transform: scale(1.07);
+    will-change: transform;
+}
+
+.photo-authors {
+    text-decoration: none;
+    color: khaki;
+}
+
+.photo-authors:visited {
+    color: #003339;
 }
 
 .back-down-layout {
@@ -113,6 +174,7 @@ span {
     padding: 0.5rem 1.5rem;
     border-radius: 5px;
     border: 1px solid #003339de;
+    outline: none;
     position: absolute;
     left: 35%;
     bottom: 3rem;
@@ -121,7 +183,7 @@ span {
     font-size: 1em;
     font-family: 'Baloo Bhaina 2', Arial, sans-serif;
     transition-duration: 0.7s;
-    transition-timing-function: cubic-bezier(.7,.48,0,0)
+    transition-timing-function: cubic-bezier(.7,.48,0,0);
 }
 
 .btn-signup:hover {
@@ -129,27 +191,42 @@ span {
     border: 1px solid rgb(238, 250, 219);
 }
 
-.photo-authors {
-    transition-property: font-size;
-    transition-duration: 333ms;
-    transition-timing-function: ease-out;
-    text-decoration: none;
-    color: khaki;
-}
-
-.photo-authors:hover {
-    font-size: 1.8rem;
-}
-
-.photo-authors:visited {
-    color: #003339;
-}
-
 /* .btn-signup:hover span {
     background: linear-gradient(90deg, rgba(238,250,219,1) 0%, rgba(244,232,56,1) 100%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } */
+
+@media screen and (min-width: 2500px) { 
+    .signup-main-box {
+        height: 60vh;
+        padding: 4rem;
+    }
+    
+    .shining {
+        height: 14rem;
+        animation-duration: 0.9s;
+    }
+
+    .form-box h1 {
+        font-size: 4em;
+    }
+
+    .form p{
+        font-size: 2.1em;
+    }
+    
+    .form input {
+        width: 100%;
+        height: 2em;
+    }
+
+    .btn-signup {
+        left: 40%;
+        bottom: 6rem;
+        font-size: 2.1em;
+    }
+}
 
 /* Project icons */
 @font-face {
