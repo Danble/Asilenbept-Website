@@ -40,18 +40,30 @@
         const shine = document.getElementById('shine');
 
         window.onload = () => {
-            setTimeout(() => {
-                shine.classList.add('shining');
-                shine.style.animationName = 'action-shineIn';
-            }, 1077);
+            if(window.innerWidth >= 2500) {
+                actionShineIn('action-shineIn-4k');
+            } else {
+                actionShineIn('action-shineIn');
+            }
         }
 
-        shine.addEventListener('animationend', (e) => {
-            if(e.animationName === 'action-shineIn') {
-                shine.style.animationName = 'action-shineOut';
-                shine.style.animationTimingFunction = 'ease-out';
-            }
-        })
+        function actionShineIn(name) {
+            setTimeout(() => {
+                shine.classList.add('shining');
+                shine.style.animationName = name;
+            }, 1077);
+            actionShineOut(name);
+        }
+
+        function actionShineOut(name) {     
+            shine.addEventListener('animationend', (e) => {
+                if(e.animationName === name) {
+                    shine.style.animationName = 'action-shineOut';
+                    shine.style.animationTimingFunction = 'ease-out';
+                }
+            })
+        }
+
     </script>
 </body>
 </html>

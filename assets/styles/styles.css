@@ -59,34 +59,43 @@ span {
 }
 
 .shining {
-    width: 95px;
-    height: 160px;
+    width: 90vw;
+    height: 10rem;
     background: rgb(24,102,87);
     background: linear-gradient(0deg, rgba(24,102,87,0.267) 0%, rgba(198,255,244,0.267) 50%, rgba(24,102,87,0.267) 100%);
     position: absolute;
-    top: 0px;
-    left: 0px;
-    animation-duration: 0.9s;
+    top: 0rem;
+    left: -50rem;
+    animation-duration: 690ms;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     will-change: transform;
 }
 
-@keyframes action-shineIn {
+@keyframes action-shineIn-4k {
     0% {
-        transform: translate(-90px, -90px) rotate(-52deg) scaleX(1.5) skew(-2deg);
+        transform: translate(-15vw, -15vh) rotate(-52deg) skew(-2deg);
     }
     100% {
-        transform: translate(178px, 210px) rotate(-52deg) scaleX(40) skew(-2deg);
+        transform: translate(28vw, 28vh) rotate(-52deg) skew(-2deg);
+    }
+}
+
+@keyframes action-shineIn {
+    0% {
+        transform: translate(0vw, 0vh) rotate(-52deg) skew(-2deg);
+    }
+    100% {
+        transform: translate(28vw, 28vh) rotate(-52deg) skew(-2deg);
     }
 }
 
 @keyframes action-shineOut {
     0% {
-        transform: translate(179px, 211px) rotate(-52deg) scaleX(37) skew(-2deg);
+        transform: translate(28vw, 28vh) rotate(-52deg) skew(-2deg);
     }
     100% {
-        transform: translate(435px, 510px) rotate(-52deg) scaleX(1.5) skew(-2deg);
+        transform: translate(56vw, 56vh) rotate(-52deg) skew(-2deg);
     }
 }
 
@@ -187,6 +196,37 @@ span {
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } */
+
+@media screen and (min-width: 2500px) { 
+    .signup-main-box {
+        height: 60vh;
+        padding: 4rem;
+    }
+    
+    .shining {
+        height: 14rem;
+        animation-duration: 0.9s;
+    }
+
+    .form-box h1 {
+        font-size: 4em;
+    }
+
+    .form p{
+        font-size: 2.1em;
+    }
+    
+    .form input {
+        width: 100%;
+        height: 2em;
+    }
+
+    .btn-signup {
+        left: 40%;
+        bottom: 6rem;
+        font-size: 2.1em;
+    }
+}
 
 /* Project icons */
 @font-face {
