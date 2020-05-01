@@ -1,3 +1,5 @@
+@import 'variables';
+
 .content {
     margin: inherit;
     padding: inherit;
@@ -8,7 +10,7 @@
 .blog {
     display: inherit;
     margin: inherit;
+    width: inherit;
     justify-content: center;
-    width: 98vw;
     padding: 3em 2em;
 }

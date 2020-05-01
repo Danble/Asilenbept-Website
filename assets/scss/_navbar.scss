@@ -1,7 +1,11 @@
+@import 'variables';
+
 .navbar {
     margin: inherit;
     padding: inherit;
     width: inherit;
+    background-color:$dark-as;
+    border-top: 1px solid $pearl-as;
 }
 
 .nav-list {
@@ -10,10 +14,9 @@
     width: inherit;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(14, 12, 12);
     list-style-type: none;
 }
 
 .list-item {
-    color: #fff;
+    color: $pearl-as;
 }
