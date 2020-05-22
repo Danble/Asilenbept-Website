@@ -31,3 +31,11 @@ window.addEventListener('scroll', (e) => {
     ticking = true;
     console.log(e);
 })
+
+// sidebar code
+let button = document.querySelector('button');
+let sidebar = document.getElementById('sidebar');
+
+button.addEventListener('click', () => {
+  sidebar.classList.toggle('collapsed');
+});

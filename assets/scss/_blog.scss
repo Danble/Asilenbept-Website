@@ -5,6 +5,7 @@
     padding: inherit;
     width: inherit;
     display: flex;
+    width: 78%;
 }
 
 .blog {
@@ -13,4 +14,44 @@
     width: inherit;
     justify-content: center;
     padding: 3em 2em;
+}
+
+#sidebar, .content {
+  height: 600px;
+  overflow:auto;
+  float:left;
+  transition: width .76s;
+}
+
+#sidebar {
+  background: $gray-as;
+  opacity: 1;
+  width: 22%;
+}
+
+#sidebar.collapsed {
+    width: 0;
+}
+
+#sidebar.collapsed + .content {
+    width: 100%;
+}
+
+.sidebar-list {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:none;
+    outline:none;
+    background: black;
+    margin: 20px;
+    cursor:pointer;
 }
